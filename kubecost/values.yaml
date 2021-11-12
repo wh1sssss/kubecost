@@ -1,0 +1,13 @@
+global:
+
+  prometheus:
+    enabled: false # If false, Prometheus will not be installed
+    fqdn: http://<service-of-promeheus>.<namespace>.svc:<port> #Ignored if enabled: true
+    #Example of fqdn: http://prom-prometheus-operator-prometheus.monitoring.svc:9090
+    
+
+  grafana:
+    enabled: false # If false, Grafana will not be installed
+    domainName: <service-of-grafana>.<namespace>.svc #grafana domain ignored if enabled: true
+    #Example of domainName: prom-grafana.monitoring.svc
+    proxy: false
